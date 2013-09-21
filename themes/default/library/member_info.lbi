@@ -7,7 +7,6 @@
  <a href="user.php?act=logout">{$lang.user_logout}</a>
 </font>
 {else}
- {$lang.welcome}&nbsp;&nbsp;&nbsp;&nbsp;
  <a href="user.php"><img src="images/bnt_log.gif" /></a>
  <a href="user.php?act=register"><img src="images/bnt_reg.gif" /></a>
 {/if}
