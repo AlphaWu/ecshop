@@ -8,15 +8,13 @@ var process_request = "{$lang.process_request}";
    <ul>
    <li class="userInfo">
    {insert_scripts files='transport.js,utils.js'}
-   <font id="ECS_MEMBERZONE">{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'} </font>
+   <!--font id="ECS_MEMBERZONE">{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'} </font-->
    </li>
    <!--{if $navigator_list.top}-->
    <li id="topNav" class="clearfix">
+         {insert name='member_info'}
     <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} -->
-            <a href="{$nav.url}" <!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>{$nav.name}</a>
-            <!-- {if !$smarty.foreach.nav_top_list.last} -->
-             |
-            <!-- {/if} -->
+            <a href="{$nav.url}" class="topNav_a"<!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>{$nav.name}</a>
     <!-- {/foreach} -->
     <div class="topNavR"></div>
    </li>
@@ -25,8 +23,8 @@ var process_request = "{$lang.process_request}";
  </div>
 </div>
 <!--search start-->
-<div id="search"  class="clearfix">
-  <div class="keys f_l">
+<!--div id="search"  class="clearfix">
+  <div class="keys f_l"-->
    <script type="text/javascript">
     {literal}
     <!--
@@ -45,6 +43,7 @@ var process_request = "{$lang.process_request}";
     -->
     {/literal}
     </script>
+<!--comment at 20130929
     {if $searchkeywords}
    {$lang.hot_search} ：
    {foreach from=$searchkeywords item=val}
@@ -61,12 +60,12 @@ var process_request = "{$lang.process_request}";
    <input name="imageField" type="submit" value="" class="go" style="cursor:pointer;" />
    <a href="search.php?act=advanced_search">{$lang.advanced_search}</a>
    </form>
-</div>
+</div-->
 <!--search end-->
 <div  class="blank"></div>
 <div id="mainNav" class="clearfix">
-  <a href="../index.php"{if $navigator_list.config.index eq 1} class="cur"{/if}>{$lang.home}<span></span></a>
+  <a href="../index.php"{if $navigator_list.config.index eq 1} class="cur"{/if}>{$lang.home}</a>
   <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav} -->
-  <a href="{$nav.url}" {if $nav.opennew eq 1}target="_blank" {/if} {if $nav.active eq 1} class="cur"{/if}>{$nav.name}<span></span></a>
+  <a href="{$nav.url}" {if $nav.opennew eq 1}target="_blank" {/if} {if $nav.active eq 1} class="cur"{/if}>{$nav.name}</a>
  <!-- {/foreach} -->
 </div>

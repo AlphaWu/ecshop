@@ -7,6 +7,6 @@
  <a href="user.php?act=logout">{$lang.user_logout}</a>
 </font>
 {else}
- <a href="user.php"><img src="images/bnt_log.gif" /></a>
- <a href="user.php?act=register"><img src="images/bnt_reg.gif" /></a>
+ <a href="user.php" id="user_php">登录</a>/
+ <a href="user.php?act=register" id="user_php_register">注册</a>
 {/if}

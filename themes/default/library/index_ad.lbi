@@ -1,8 +1,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <!-- {if $index_ad eq 'sys'} -->
   <script type="text/javascript">
-  var swf_width=484;
-  var swf_height=200;
+  var swf_width=992;
+  var swf_height=496;
   </script>
   <script type="text/javascript" src="data/flashdata/{$flash_theme}/cycle_image.js"></script>
 <!-- {elseif $index_ad eq 'cus'} -->
