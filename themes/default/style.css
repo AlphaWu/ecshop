@@ -106,7 +106,7 @@ visibility:hidden;
   .blank5{height:3px; line-height:5px;/* _margin:-3px 0;*/ clear:both; visibility:hidden;}
   /*布局*/
   .AreaL{width:200px; float:left; margin-right:10px;}
-  .AreaR{width:794px; float:left;}
+  .AreaR{width:784px; float:left;}
   .AreaM{width:994px; float:left;}
 
 /* ====================
@@ -433,7 +433,7 @@ visibility:hidden;
    #pager a{color:#0066cc; text-decoration:none;}
 
    /*底部导航+友情链接*/
-   #bottomNav{width:980px;}
+   #bottomNav{width:994px;}
    .bNavList{border:1px solid #fff; background:#eef6f9; height:27px; line-height:27px; padding:0 12px;}
    .links{border:1px solid #fff; background:#eef6f9; padding:0 12px;}
    .bNavList a,.links a{color:#006acd; text-decoration:none;}
