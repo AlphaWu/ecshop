@@ -433,13 +433,14 @@ visibility:hidden;
    #pager a{color:#0066cc; text-decoration:none;}
 
    /*底部导航+友情链接*/
-   #bottomNav{width:958px;}
+   #bottomNav{width:980px;}
    .bNavList{border:1px solid #fff; background:#eef6f9; height:27px; line-height:27px; padding:0 12px;}
    .links{border:1px solid #fff; background:#eef6f9; padding:0 12px;}
    .bNavList a,.links a{color:#006acd; text-decoration:none;}
    .bNavList img{_position:relative; top:8px;}
    .links img{width:88px; height:30px; margin:5px;}
    /*版权*/
+   .text_r{text-align:right;}
    #footer{background:url(images/logo1.gif) no-repeat 5% 50%; padding-left:200px; width:760px; margin:10px auto;}
    #footer .text{background:url(images/footerLine.gif) no-repeat left center; padding-left:50px; *padding-bottom:20px;}
    #footer .text a{color:#404040; text-decoration:none;}
