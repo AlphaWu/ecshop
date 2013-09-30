@@ -6,7 +6,7 @@
          <a href="search.php?intro=new"><img class="main_more" /></a>
   </div>
   <div id="show_new_area" class="clearfix goodsBox">
-         <img class="left_more" />
+         <!--img class="left_more" /-->
     <!--{foreach from=$new_goods item=goods}-->
     <div class="goodsItem">
       <span class="news"></span>

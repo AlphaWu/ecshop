@@ -121,6 +121,7 @@ visibility:hidden;
   #topNav{background:url(images/topNav_bg.png) no-repeat; height:34px; width:387px;
   line-height:35px; color:#bebfc1; /*padding:0px 15px;*/ margin:0px -9px; position:relative;
   }
+  #logo{background:url(images/aoya.png) no-repeat; height:76px; width:91px;}
   /*#topNav .topNavR{ width:5px; height:31px;
   position:absolute; top:0px; right:0px;
   }*/
@@ -237,6 +238,7 @@ visibility:hidden;
    .main_more{margin-left:340px;display:block;width:45px;height:11px;background:url(images/tubiao.png) no-repeat 0px -110px;}
    .left_more{margin-left:40px;display:block;width:32px;height:116px;background:url(images/tubiao.png) no-repeat 0px -130px;float:left;}
    .right_more{margin-left:40px;display:block;width:32px;height:116px;background:url(images/tubiao.png) no-repeat 0px -130px;float:left;}
+   .main_hot{height:165px;}
    .itemTit.Hot{background:url(images/bg.gif) no-repeat 0px -256px;}
    .itemTit img{position:relative; top:7px;}
    .itemTit h2{float:left; height:27px; background:url(images/itemH2Bg.gif) repeat-x left top; border:1px solid #d6ecff;
