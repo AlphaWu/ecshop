@@ -39,7 +39,7 @@
  <!-- #EndLibraryItem -->
 <!--新品上市 end-->
        <!--news-->
-       <div id="mallNews" class="f_r">
+       <div id="mallNews" class="box_2 centerPadd">
         <div class="NewsTit"></div>
         <div class="NewsList tc">
          <!-- TemplateBeginEditable name="站内快讯上广告位（宽：210px）" -->

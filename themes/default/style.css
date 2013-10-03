@@ -199,8 +199,8 @@ visibility:hidden;
    .top10List li a:hover,#mallNews .NewsList li a:hover,.boxCenterList li a:hover{color:#ff6600; text-decoration:none;}
    /*首页焦点图*/
    #focus{border-right:1px solid #c5e4ff; padding:1px; background:url(images/foucsBg.gif) repeat-x left top;}
-   #mallNews{width:230px; padding:8px 8px 0px 8px; background:url(images/foucsBg.gif) repeat-x left top;float:left;}
-   #mallNews .NewsTit{background:url(images/bg.gif) 0px -132px; height:23px;}
+   #mallNews{width:375px;height:160px;background:url(images/foucsBg.gif) repeat-x left top;float:left;}
+   #mallNews .NewsTit{background:url(images/tubiao.png) no-repeat 0px 0px; height:30px;}
    #mallNews .NewsList{background:#FFFFFF; padding:8px;}
    #mallNews .NewsList ul{margin-top:10px;}
    #mallNews .NewsList li{background:url(images/bg.gif) no-repeat 0px -167px; padding:0px 0px 0px 10px;
@@ -235,7 +235,7 @@ visibility:hidden;
    }
    .itemTit.New{background:url(images/tubiao.png) no-repeat 0px -35px;}
    .show_new{margin:0px;display:block;width:587px;height:160px;float:left;}
-   .main_more{margin-left:340px;display:block;width:45px;height:11px;background:url(images/tubiao.png) no-repeat 0px -110px;}
+   .main_more{margin:8px 5px 0px 340px;display:inline-block;width:45px;height:11px;background:url(images/tubiao.png) no-repeat 0px -110px;}
    .left_more{margin-left:40px;display:block;width:32px;height:116px;background:url(images/tubiao.png) no-repeat 0px -130px;float:left;}
    .right_more{margin-left:40px;display:block;width:32px;height:116px;background:url(images/tubiao.png) no-repeat 0px -130px;float:left;}
    .main_hot{height:165px;}

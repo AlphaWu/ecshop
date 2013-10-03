@@ -3,7 +3,7 @@
 <!-- {if $cat_rec_sign neq 1} -->
 <div class="box_2 centerPadd show_new">
   <div class="itemTit New" id="itemNew">
-         <a href="search.php?intro=new"><img class="main_more" /></a>
+         <a href="search.php?intro=new" class="main_more" ></a>
   </div>
   <div id="show_new_area" class="clearfix goodsBox">
          <!--img class="left_more" /-->
