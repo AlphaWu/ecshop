@@ -13,7 +13,7 @@ Template Type: type_0
 /* ====================
      公共样式
 ==================== */
-body{background:url(images/body_bg.jpg) repeat-x left top; font-size:12px; font-family:"宋体",Verdana, Arial; line-height:150%; margin:5px 0 0 0; padding:0; color:#404040;}
+body{font-size:12px; font-family:"宋体",Verdana, Arial; line-height:150%; margin:0; padding:0; color:#404040;}
 div{margin:0 auto; padding:0;}
 h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,form,img,p{
 margin:0; padding:0; border:none; list-style-type:none;
@@ -78,10 +78,9 @@ visibility:hidden;
   text-align:center; line-height:21px; color:#fff; border:none; cursor:pointer;
   }
   /*模块容器*/
-  .box{background:#f1f1f1; padding-bottom:2px; overflow:hidden;}
+  .box{background:#fdf8ce; padding-bottom:7px; overflow:hidden;}
   .box_1{border:1px solid #c5e4ff; background-color:#fff;}
-  .box_2{border:0px; background:url(images/box_2Bg.gif) repeat-x top left;
-  background-color:#fffcf3;  overflow:hidden;
+  .box_2{border:0px; background-color:#fdf8ce;  overflow:hidden;
   }
   .boxCenterList{padding:8px;}
   /*模块标题*/
@@ -102,12 +101,12 @@ visibility:hidden;
   h6 span{float:left; padding-left:15px;}
 
   /*页面留白*/
-  .blank{height:8px; line-height:8px; clear:both; visibility:hidden;}
-  .blank5{height:3px; line-height:5px;/* _margin:-3px 0;*/ clear:both; visibility:hidden;}
+  .blank{height:3px; line-height:8px; clear:both; visibility:hidden;}
+  .blank5{/*height:3px;*/ line-height:5px;/* _margin:-3px 0;*/ clear:both; visibility:hidden;}
   /*布局*/
   .AreaL{width:200px; float:left; margin-right:10px;}
   .AreaR{width:784px; float:left;}
-  .AreaM{width:994px; float:left;}
+  .AreaM{width:994px; }
 
 /* ====================
      导航部分
@@ -121,7 +120,9 @@ visibility:hidden;
   #topNav{background:url(images/topNav_bg.png) no-repeat; height:34px; width:387px;
   line-height:35px; color:#bebfc1; /*padding:0px 15px;*/ margin:0px -9px; position:relative;
   }
-  #logo{background:url(images/aoya.png) no-repeat; height:76px; width:91px;}
+  #logo{height:76px; width:125px; margin:3px 5px}
+  #header_title{font-size:30px; margin:57px 0 0 7px; color:#ba9e66;}
+  #header_activities{margin: 55px 0px 0px 70px; width: 200px; height: 25px; font-size: 14px; background: #fff6c3; padding-left: 5px;  line-height: 2;}
   /*#topNav .topNavR{ width:5px; height:31px;
   position:absolute; top:0px; right:0px;
   }*/
@@ -139,25 +140,18 @@ visibility:hidden;
   }
   #search .go{background:url(images/bnt_search.gif); border:none; width:52px; height:19px;/* position:relative; top:2px; utf8下*/}
   /*页面主导航*/
-  #mainNav{padding:0 25px; width:910px;}
-  #mainNav a{display:block; height:26p; float:left; line-height:23px; text-align:center;
-  padding:0 15px; position:relative;
-  margin-right:2px; color:#ffffff; text-decoration:none;
-  }
-  #mainNav a span{width:3px; height:26px; background:url(images/NavBg.gif) no-repeat 0 -88px;
+  #mainNav{/*padding:0 25px; width:910px;*/ background:url(images/nav_main_bg.png) repeat-x left top}
+  #mainNav a{display:block; height:26px; float:left; line-height:23px; text-align:center; padding:0 25px; position:relative; margin-left:20px; color:#ffffff; text-decoration:none; font-size: 16px; }
+  #main_bg{background:url(images/main_bg.jpg) repeat-x left top;}
+  /*#mainNav a span{width:3px; height:26px; background:url(images/NavBg.gif) no-repeat 0 -88px;
   position:absolute; top:0px; right:0px;
+  }*/
+  #mainNav a:hover{ line-height:25px; }
+  #mainNav .cur{ font-weight:bold;
   }
-  #mainNav a:hover{display:block; height:26p; float:left; line-height:23px; text-align:center;
-  padding:0 15px; position:relative;
-  margin-right:2px; color:#fff; text-decoration:none;
-  }
-  #mainNav .cur{display:block; height:26p; float:left; line-height:23px; text-align:center;
-  padding:0 15px; position:relative;
-  margin-right:2px; color:#fff; text-decoration:none; font-weight:bold;
-  }
-  #mainNav a:hover span,#mainNav .cur span{width:3px; height:26px; background:url(images/NavBg.gif) no-repeat 0 -59px;
+  /*#mainNav a:hover span,#mainNav .cur span{width:3px; height:26px; 
   position:absolute; top:0px; right:0px;
-  }
+  }*/
   /*当前位置*/
   #ur_here{border:1px solid #c5e4ff; border-top:none; background:url(images/uh_bg.gif) repeat-x left top;
   height:36px; line-height:36px; padding:0 12px;
@@ -198,14 +192,16 @@ visibility:hidden;
    .top10List li a,#mallNews .NewsList li a,.boxCenterList li a{color:#3f3f3f; text-decoration:none;}
    .top10List li a:hover,#mallNews .NewsList li a:hover,.boxCenterList li a:hover{color:#ff6600; text-decoration:none;}
    /*首页焦点图*/
-   #focus{border-right:1px solid #c5e4ff; padding:1px; background:url(images/foucsBg.gif) repeat-x left top;}
-   #mallNews{width:375px;height:160px;background:url(images/foucsBg.gif) repeat-x left top;float:left;}
+   #focus{/*border-right:1px solid #c5e4ff; padding:1px; background:url(images/foucsBg.gif) repeat-x left top;*/}
+   #focus{width:994px; height:497px;}
+   #mallNews{width:375px;height:160px;float:left;}
    #mallNews .NewsTit{background:url(images/tubiao.png) no-repeat 0px 0px; height:30px;}
-   #mallNews .NewsList{background:#FFFFFF; padding:8px;}
+   #mallNews .NewsList{background:#fdf8ce; padding:8px;}
    #mallNews .NewsList ul{margin-top:10px;}
-   #mallNews .NewsList li{background:url(images/bg.gif) no-repeat 0px -167px; padding:0px 0px 0px 10px;
+   #mallNews .NewsList li{background:url(images/tubiao.png) no-repeat 0px -255px; padding:0px 0px 0px 24px;margin:0px 0px 12px 0px;
    text-align:left;
    }
+   .new_article_cat{color:#9b8033;}
    /*今日特价和品牌*/
    #sales{width:500px; background:url(images/salesBg.gif) repeat-x left bottom;
    border-bottom:2px solid #f0f1f3; background-color:#eef8ff;
@@ -239,7 +235,7 @@ visibility:hidden;
    .left_more{margin-left:40px;display:block;width:32px;height:116px;background:url(images/tubiao.png) no-repeat 0px -130px;float:left;}
    .right_more{margin-left:40px;display:block;width:32px;height:116px;background:url(images/tubiao.png) no-repeat 0px -130px;float:left;}
    .main_hot{height:165px;}
-   .itemTit.Hot{background:url(images/bg.gif) no-repeat 0px -256px;}
+   .itemTit.Hot{background:url(images/tubiao.png) no-repeat 0px -65px;}
    .itemTit img{position:relative; top:7px;}
    .itemTit h2{float:left; height:27px; background:url(images/itemH2Bg.gif) repeat-x left top; border:1px solid #d6ecff;
    font-size:12px; text-align:center; color:#3f3f3f; font-weight:100; padding:0px 10px; line-height:28px; margin:0 6px 0 0;
@@ -251,7 +247,7 @@ visibility:hidden;
      display:inline; white-space:nowrap;
    }
    .itemTit .h2bg a{color:#006ace; text-decoration:none;}
-   .centerPadd .goodsBox{border:1px solid #d6ecff; background:#fff; padding:12px 0px 0px 17px; *padding:12px 0px 0px 17px;
+   .centerPadd .goodsBox{background:#fdf8ce; padding:12px 0px 0px 17px; *padding:12px 0px 0px 17px;
    _padding:12px 0px 0px 0px;}
    .centerPadd .goodsBox .more{text-align:right; clear:both; margin:0 8px 8px 0;}
        /*单个商品*/
@@ -433,10 +429,14 @@ visibility:hidden;
    #pager a{color:#0066cc; text-decoration:none;}
 
    /*底部导航+友情链接*/
-   #bottomNav{width:994px;}
-   .bNavList{border:1px solid #fff; background:#eef6f9; height:27px; line-height:27px; padding:0 12px;}
+   #bottomNav{/*width:994px;*/ background:#ffe18e}
+   #back_top{background: url(images/tubiao.png) no-repeat 0px -280px;
+    width: 207px; height: 35px; margin-right: -12px;}
+   #back_top a { color: #fff; margin: 3px 17px 0px 20px; display: inline-block; float: right;}
+   #footer_share { margin: 5px 30px 0px 0px; }
+   .bNavList{ height:27px; line-height:27px; padding:0 12px;}
    .links{border:1px solid #fff; background:#eef6f9; padding:0 12px;}
-   .bNavList a,.links a{color:#006acd; text-decoration:none;}
+   .bNavList a,.links a{color:#404040; text-decoration:none;}
    .bNavList img{_position:relative; top:8px;}
    .links img{width:88px; height:30px; margin:5px;}
    /*版权*/

@@ -19,14 +19,14 @@
 <body>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
 <div class="blank"></div>
-<div class="block clearfix">
+<div id="main_bg" class="clearfix">
   <!--main start-->
   <div class="AreaM">
    <!--焦点图 START-->
     <div class="box clearfix">
-     <div class="box_1 clearfix">
+     <div class="clearfix">
        <div class="f_l" id="focus">
-       <!-- #BeginLibraryItem "/library/index_ad.lbi" --><!-- #EndLibraryItem -->
+         <img src="themes/default/images/main_focus.jpg"/>
        </div>
      </div>
     </div>

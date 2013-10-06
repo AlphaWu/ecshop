@@ -1,11 +1,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <!--底部导航 start-->
 <div id="bottomNav" class="box">
- <div class="box_1">
+ <div class="block">
   <div class="bNavList clearfix">
-   <div class="f_r">
-   <a href="#top"><img src="images/bnt_top.gif" /></a> <a href="../index.php"><img src="images/bnt_home.gif" /></a>
+   <div id="back_top" class="f_r">
+     <a href="#">跳回顶部</a>
+     <a href="#top">在线客服</a>
    </div>
+   <div id="footer_share" class="f_r">
+	<!--Passit BUTTON BEGIN-->
+	<div class="passit_barDiv"><a class="passit_default" href="http://www.passit.cn/bookmark.html" target="_blank"></a></div>
+
+	<script type="text/javascript">
+	var passit_title = "";//自定义分享标题，删除和留空表示使用默认
+	var passit_url = "";//自定义分享网址，删除和留空表示使用默认
+	var passit_content= "";//自定义分享内容，删除和留空表示使用默认Meta中的描述
+	var passit_image= "";//自定义分享图片，删除和留空表示不分享图片
+	var sina_appkey= "";//sina微博appkey,删除和留空表示使用默认
+	var qq_appkey= "";//腾讯微博appkey,删除和留空表示使用默认
+	</script>
+	<script type="text/javascript">
+	bookmark_service_div="qq,kxzt,qqxy,baiduHi,bookmark,baidu,douban,sohuweibo,163weibo,more";
+	bookmark_service="share,qqkj,sinaweibo,xnzt,more";</script>
+	<script type="text/javascript" src="http://www.passit.cn/js/passit_bar_new.js?pub=0&simple=1" charset="UTF-8"></script>
+	<!--Passit BUTTON END-->
+   </div>
+   <!--div id="footer_weibo" class="f_r"><a href="#"><img src="themes/default/images/tubiao.png"/></a></div-->
    <div class="blank"></div>
 
 <div class="f_r"><img src="themes/default/images/erwei.png"/></div>

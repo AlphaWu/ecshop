@@ -329,7 +329,7 @@ onload = function()
     }
   } // FF
 
-  try
+/*  try
   {
     rmd = Math.random();
     rmd_s = Math.floor(rmd * 10);
@@ -349,7 +349,7 @@ onload = function()
   }
   catch(ex)
   {
-  }
+  }*/
 }
 
 /* *
