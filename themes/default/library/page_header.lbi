@@ -16,7 +16,7 @@ var process_request = "{$lang.process_request}";
    <li id="topNav" class="clearfix">
          {insert name='member_info'}
     <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} -->
-            <a href="{$nav.url}" class="topNav_a"<!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>{$nav.name}</a>
+            <a href="{$nav.url}" class="topNav_a f_l"<!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>{$nav.name}</a>
     <!-- {/foreach} -->
     <div class="topNavR"></div>
    </li>

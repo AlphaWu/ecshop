@@ -126,9 +126,11 @@ visibility:hidden;
   /*#topNav .topNavR{ width:5px; height:31px;
   position:absolute; top:0px; right:0px;
   }*/
-  #user_php{margin:0px 5px 0px 60px;}
-  #user_php_register{margin:0px 10px 0px 5px;}
-  .topNav_a{none;margin:10px 50px 0px 20px;}
+  /*#user_php{margin:0px 5px 0px 60px;}
+  #user_php_register{margin:0px 10px 0px 5px;}*/
+  .header_user{margin-left:30px;}
+  .topNav_a{none;margin:0px 0px 0px 40px;}
+  #header_logined{margin-left:45px;}
   #topNav a{color:#ffffff; text-decoration:none;}
   /*搜索*/
   #search{display:block; width:918px;
