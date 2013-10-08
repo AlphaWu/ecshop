@@ -13,7 +13,7 @@ Template Type: type_0
 /* ====================
      公共样式
 ==================== */
-body{font-size:12px; font-family:"宋体",Verdana, Arial; line-height:150%; margin:0; padding:0; color:#404040;}
+body{font-size:12px; font-family:"宋体",Verdana, Arial; line-height:150%; margin:0; padding:0; color:#404040;background:#fff;}
 div{margin:0 auto; padding:0;}
 h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,form,img,p{
 margin:0; padding:0; border:none; list-style-type:none;
@@ -195,7 +195,7 @@ visibility:hidden;
    .top10List li a:hover,#mallNews .NewsList li a:hover,.boxCenterList li a:hover{color:#ff6600; text-decoration:none;}
    /*首页焦点图*/
    #focus{/*border-right:1px solid #c5e4ff; padding:1px; background:url(images/foucsBg.gif) repeat-x left top;*/}
-   #focus{width:994px; height:497px;}
+   #focus{width:994px; height:710px;}
    #mallNews{width:375px;height:160px;float:left;}
    #mallNews .NewsTit{background:url(images/tubiao.png) no-repeat 0px 0px; height:30px;}
    #mallNews .NewsList{background:#fdf8ce; padding:8px;}
@@ -253,6 +253,8 @@ visibility:hidden;
    _padding:12px 0px 0px 0px;}
    .centerPadd .goodsBox .more{text-align:right; clear:both; margin:0 8px 8px 0;}
        /*单个商品*/
+       #main_goodsItem{margin:0px 0px 15px 14px;}
+       .goodsItem{width:118px; float:left; position:relative; overflow:hidden; margin:0px 14px 15px 14px;}
        .goodsItem{width:118px; float:left; position:relative; overflow:hidden; margin:0px 14px 15px 14px;}
        .goodsItem .goodsimg{width:116px; height:116px; border:1px solid #d8d8be; /*margin-bottom:4px;*/}
        .goodsItem img{width:52px; height:17px;}

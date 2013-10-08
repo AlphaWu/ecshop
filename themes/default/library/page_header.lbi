@@ -2,7 +2,8 @@
 <script type="text/javascript">
 var process_request = "{$lang.process_request}";
 </script>
-<div class="block clearfix">
+<div class="clearfix box">
+<div class="block">
  <div class="f_l"><a href="../index.php" name="top"><img id="logo" src="../images/header_logo.png" /></a></div>
  <div id="header_title" class="f_l">澳亚网上商城</div>
  <div id="header_activities" class="f_l">活动1</div>
@@ -23,6 +24,7 @@ var process_request = "{$lang.process_request}";
    <!-- {/if} -->
    </ul>
  </div>
+</div>
 </div>
 <!--search start-->
 <!--div id="search"  class="clearfix">
