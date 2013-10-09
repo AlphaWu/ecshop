@@ -195,7 +195,7 @@ visibility:hidden;
    .top10List li a:hover,#mallNews .NewsList li a:hover,.boxCenterList li a:hover{color:#ff6600; text-decoration:none;}
    /*首页焦点图*/
    #focus{/*border-right:1px solid #c5e4ff; padding:1px; background:url(images/foucsBg.gif) repeat-x left top;*/}
-   #focus{width:994px; height:710px;}
+   #focus{width:994px; height:497px;}
    #mallNews{width:375px;height:160px;float:left;}
    #mallNews .NewsTit{background:url(images/tubiao.png) no-repeat 0px 0px; height:30px;}
    #mallNews .NewsList{background:#fdf8ce; padding:8px;}

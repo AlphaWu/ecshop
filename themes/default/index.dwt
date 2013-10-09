@@ -26,7 +26,8 @@
     <div class="box clearfix">
      <div class="clearfix">
        <div class="f_l" id="focus">
-         <img src="themes/default/images/main_focus.jpg"/>
+         <!--img src="themes/default/images/main_focus.jpg"/-->
+         <!-- #BeginLibraryItem "/library/index_ad.lbi" --><!-- #EndLibraryItem -->
        </div>
      </div>
     </div>
