@@ -155,9 +155,7 @@ visibility:hidden;
   position:absolute; top:0px; right:0px;
   }*/
   /*当前位置*/
-  #ur_here{border:1px solid #c5e4ff; border-top:none; background:url(images/uh_bg.gif) repeat-x left top;
-  height:36px; line-height:36px; padding:0 12px;
-  }
+  #ur_here{ height:36px; line-height:36px; padding:0 12px; margin-top:40px}
   #ur_here a{color:#006cce; text-decoration:none;}
 
 /* ====================

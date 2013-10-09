@@ -389,6 +389,10 @@ function reg(str){
       </li>
       <!-- {/foreach} -->
       <!-- {* 结束循环可选属性 *} -->
+      <li class="clearfix">
+        <dd><strong>备注</strong></dd>
+        <dd class="ddR"><strong class="f4">此产品在销售中，不发往海外及港澳地区。</strong></dd>
+      </li>
       <li class="padd">
       <a href="javascript:addToCart({$goods.goods_id})"><img src="images/bnt_cat.gif" /></a>
       <a href="javascript:collect({$goods.goods_id})"><img src="images/bnt_colles.gif" /></a>
