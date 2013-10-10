@@ -13,7 +13,7 @@ Template Type: type_0
 /* ====================
      公共样式
 ==================== */
-body{font-size:12px; font-family:"宋体",Verdana, Arial; line-height:150%; margin:0; padding:0; color:#404040;background:#fff;}
+body{font-size:12px; font-family:"宋体",Verdana, Arial; line-height:150%; margin:0; padding:0; color:#404040;background:#fdf8de;}
 div{margin:0 auto; padding:0;}
 h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,form,img,p{
 margin:0; padding:0; border:none; list-style-type:none;
@@ -79,12 +79,12 @@ visibility:hidden;
   }
   /*模块容器*/
   .box{background:#fdf8ce; padding-bottom:7px; overflow:hidden;}
-  .box_1{border:1px solid #c5e4ff; background-color:#fff;}
+  .box_1{border:1px solid #c5e4ff; background-color:#fdf8ce;}
   .box_2{border:0px; background-color:#fdf8ce;  overflow:hidden;
   }
   .boxCenterList{padding:8px;}
   /*模块标题*/
-  h3{height:33px; line-height:33px; font-size:12px; background:url(images/h3title.gif) repeat-x left top; text-align:right;
+  h3{height:33px; line-height:33px; font-size:12px; /*background:url(images/h3title.gif) repeat-x left top;*/ background:#e1dabe; text-align:right;
   padding:0 12px; font-weight:100;
   }
   h3.border{border:1px solid #c5e4ff; border-bottom:none;}
@@ -162,13 +162,13 @@ visibility:hidden;
      模块
 ==================== */
    /*购物车*/
-   .cart{background:url(images/catBg.gif) no-repeat left top; padding:15px 10px 15px 50px;
+   .cart{background:url(images/catBg.png) no-repeat left top; padding:15px 10px 15px 50px;
    color:#006bcd; height:50px;  _padding:12px 10px 15px 50px;
    }
    .cart a{color:#006bcd; text-decoration:none;}
    .cart a:hover{color:#006bcd; text-decoration:underline;}
    /*商品分类*/
-   #category_tree{border:4px solid #f1faff; background-color:#fff;}
+   #category_tree{border:4px solid #e1dabe; background-color:#fff;}
    #category_tree dl{margin:6px;}
    #category_tree dt{background:url(images/lineBg.gif) repeat-x left bottom;
    color:#3f3f3f;  padding:2px 0 3px 12px;
@@ -288,8 +288,7 @@ visibility:hidden;
    margin:6px 5px 0 0; border:1px solid #c5e3ff; border-bottom:none; background-color:#FFFFFF;
    }
    .history .h2bg{height:26px; line-height:26px; padding:0px 10px 0 20px; text-align:center; font-size:12px;
-   background:url(images/bg.gif) no-repeat 0px -508px; float:left; color:#a0a0a0;
-   margin:6px 5px 0 0; border:none;
+   background:url(images/bg.gif) no-repeat 0px -508px; float:left; color:#a0a0a0; margin:6px 5px 0 0; border:none;
    }
      #history li{width:100%;}
 		 #clear_history a{background:none; padding:0px; color:#3f3f3f; text-decoration:none;float:right;cursor:pointer;}
@@ -298,7 +297,7 @@ visibility:hidden;
    /* ====================
      商品详情页面部分模块
 ==================== */
-   #goodsInfo{background:#f2f2f2; padding:8px; _height:1%;}
+   #goodsInfo{background:#fdf8ce; padding:8px; _height:1%;}
    #goodsInfo .imgInfo{width:230px; float:left; margin-right:10px; overflow:hidden;}
    #goodsInfo .imgInfo .thumb{width:230px; height:230px; display:block;}/*商品详情图片*/
    #goodsInfo span{width:4px; height:48px; background:url(images/bg.gif) no-repeat 0 -527px; float:left;}
@@ -308,7 +307,7 @@ visibility:hidden;
    #goodsInfo .gallery li{float:left; width:48px; margin:0 2px;}
    #goodsInfo .gallery li img{width:46px; height:46px; display:block;}
    /*文字信息*/
-   #goodsInfo .textInfo{background:#fff; width:473px; float:left; padding:10px;}
+   #goodsInfo .textInfo{border:2px solid #e1dabe;background:#fdf8ce; width:473px; float:left; padding:10px;}
    #goodsInfo .textInfo p{font-size:14px; font-weight:bold; padding:0 5px 5px 8px;}
    #goodsInfo .textInfo ul{border-top:1px solid #ccc;}
    #goodsInfo .textInfo li{background:url(images/lineBg.gif) repeat-x left bottom; padding:0px 8px; _height:1%;}
@@ -348,7 +347,7 @@ visibility:hidden;
      用户中心
 ==================== */
     .box_1 .userCenterBox{border:4px solid #f1faff; background-color:#fff;}
-    .usBox{background:#f2f2f2; border:1px solid #e2e2e2; padding:15px; width:928px;}
+    .usBox{background:#f2f2f2; border:1px solid #e2e2e2; padding:15px; width:962px;}
     .usBox_1{background:#fff; text-align:left; width:297px; height:208px; padding:43px 153px 60px 123px;}
     .usBox_1 .logtitle{height:30px; background:url(images/ur_bg.gif) no-repeat 0px 0px;}
     .us_Submit{border:none; width:115px; height:40px; background:url(images/bnt_ur_log.gif);}

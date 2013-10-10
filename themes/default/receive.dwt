@@ -34,13 +34,7 @@ p a{color:#006acd; text-decoration:underline;}
 </div>
 <div class="blank5"></div>
 <!--帮助-->
-<div class="block">
-  <div class="box">
-   <div class="helpTitBg clearfix">
     <!-- #BeginLibraryItem "/library/help.lbi" --><!-- #EndLibraryItem -->
-   </div>
-  </div>
-</div>
 <div class="blank"></div>
 <!--帮助-->
 <!--友情链接 start-->

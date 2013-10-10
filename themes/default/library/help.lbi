@@ -1,5 +1,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<!--{if $helps}-->
+<!--{if false }-->
+<!--{* if $helps *}-->
+<div class="block">
+  <div class="box">
+   <div class="helpTitBg clearfix">
 <!-- {foreach from=$helps item=help_cat} -->
 <dl>
   <dt><a href='{$help_cat.cat_id}' title="{$help_cat.cat_name}">{$help_cat.cat_name}</a></dt>
@@ -8,4 +12,7 @@
   <!-- {/foreach} -->
 </dl>
 <!-- {/foreach} -->
+   </div>
+  </div>
+</div>
 <!--{/if}-->
