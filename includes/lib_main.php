@@ -1985,6 +1985,7 @@ function get_navigator($ctype = '', $catlist = array())
             'url'       =>  $row['url'],
             'ctype'     =>  $row['ctype'],
             'cid'       =>  $row['cid'],
+            'styleid'   =>  explode(".", $row['url']),
             );
     }
 

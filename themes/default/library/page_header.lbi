@@ -15,10 +15,10 @@ var process_request = "{$lang.process_request}";
    </li>
    <!--{if $navigator_list.top}-->
    <li id="topNav" class="clearfix">
-         {insert name='member_info'}
     <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} -->
-            <a href="{$nav.url}" class="topNav_a f_l"<!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>{$nav.name}</a>
+            <a id="{$nav.styleid[0]}" href="{$nav.url}" class="f_r"<!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>{$nav.name}</a>
     <!-- {/foreach} -->
+         {insert name='member_info'}
     <div class="topNavR"></div>
    </li>
    <!-- {/if} -->

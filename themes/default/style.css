@@ -117,9 +117,6 @@ visibility:hidden;
   .log .userInfo{*margin-right:10px; /*width:300px;*/ text-align:left;}
   .log .userInfo a{color:#006acd; text-decoration:none;}
   .log li img{position:relative; top:5px;}
-  #topNav{background:url(images/topNav_bg.png) no-repeat; height:34px; width:387px;
-  line-height:35px; color:#bebfc1; /*padding:0px 15px;*/ margin:0px -9px; position:relative;
-  }
   #logo{height:76px; width:125px; margin:3px 5px}
   #header_title{font-size:30px; margin:57px 0 0 7px; color:#ba9e66;}
   #header_activities{margin: 55px 0px 0px 70px; width: 200px; height: 25px; font-size: 14px; background: #fff6c3; padding-left: 5px;  line-height: 2;}
@@ -130,8 +127,13 @@ visibility:hidden;
   #user_php_register{margin:0px 10px 0px 5px;}*/
   .header_user{margin-left:30px;}
   .topNav_a{none;margin:0px 0px 0px 40px;}
-  #header_logined{margin-left:45px;}
-  #topNav a{color:#ffffff; text-decoration:none;}
+  #header_logined{margin:8px 0px 0px 45px;background:url(images/tubiao.png) no-repeat 0px -440px; padding-left:19px;line-height:17px;}
+  #topNav{background:url(images/tubiao.png) no-repeat 0px -400px; height:34px; width:387px;
+  line-height:35px; color:#bebfc1; /*padding:0px 15px;*/ margin:0px -9px; position:relative;
+  }
+  #topNav #flow{width:70px;background:url(images/tubiao.png) no-repeat 0px -480px; padding-left:19px}
+  #topNav #user{width:70px;background:url(images/tubiao.png) no-repeat 0px -460px; padding-left:17px}
+  #topNav a{color:#ffffff; text-decoration:none;line-height:17px;margin:8px 0px 0px 10px;}
   /*搜索*/
   #search{display:block; width:918px;
   padding:0px 20px; height:36px; line-height:36px;
