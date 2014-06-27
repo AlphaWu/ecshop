@@ -1,0 +1,120 @@
+安装流程:
+1.增加支付项
+select * from ecs_payment
+INSERT INTO `ecs_payment` ( `pay_id`, `pay_code`, `pay_name`, `pay_fee`, `pay_desc`, `pay_order`, `pay_config`, `enabled`, `is_cod`, `is_online` ) VALUES  ('5', 'boc', '交通银行', '0', '请使用交通银行进行支付', '0', 'a:0:{}', '1', '0', '1');
+
+2.
+ecshop/includes/modules/payment添加boc.php
+./includes/modules/payment/boc.php
+./includes/modules/payment/boc_merchant.php
+ecshop/languages/zh_cn/payment添加boc.php
+./languages/zh_cn/payment/boc.php
+
+修改权限:
+chown -R nobody boc*
+chgrp -R nogroup boc*
+chmod -R 770 boc*
+
+导入证书:
+keytool -import -keystore "/usr/lib/jvm/java-7-openjdk-i386/jre/lib/security/cacerts" -storepass changeit -alias test_bocommca -file "/bocommjava/cert/test_root.cer"
+
+启动守护程序:
+java -jar "/bocommjava/lib/socket_php.jar" 8080 "/bocommjava/ini/B2CMerchant.xml" "/bocommjava/log/socket.log"
+
+###(无需这步)修改/opt/lampp/htdocs/ecshop的respond.php文件
+
+------------------
+上线修改
+导入生产证书
+生产环境："C:\Program Files\Java\jre1.5\bin\keytool" -import -keystore "C:\Program Files \Java\jre1.5\lib\security\cacerts" -storepass changeit -alias bocommca -file "C:\bocommjava\cert\root.cer" 完成导入。
+查询根证书命令："C:\Program Files\Java\jre1.5\bin\keytool" -list -keystore "C:\Program Files \Java\jre1.5\lib\security\cacerts" -storepass changeit
+
+
+增加生产客户证书
+
+
+修改xml
+
+修改文件里面的客户号
+
+重启java程序
+
+
+===================
+http://www.car21cn.com/search.php?encode=YTozOntzOjg6ImtleXdvcmRzIjtzOjk6IuWeg%2bWcvuahtiI7czoxMDoiaW1hZ2VGaWVsZCI7czowOiIiO3M6MTg6InNlYXJjaF9lbmNvZGVfdGltZSI7aToxNDAzODU2NDM1O30=
+
+www.car21cn.com/admin/index.php
+用户名:hqadmin
+密码:100300lmx
+
+dbname:ecdb_qh53_com
+user:roote
+password:www_car2100_com@20130728
+
+ftp://211.147.244.13
+bbs
+Bbs@#car2100
+
+参考资料
+主动通知过程，定义主动通知url值'merURL'      => return_url('boc'),//return会自动拼装返回的值和变量，支付成功之后调用respond.php页面，该页面会调用boc.php的respond方法。
+
+
+
+    /**
+     * 生成支付代码
+     * @param   array   $order      订单信息
+     * @param   array   $payment    支付方式信息
+     */
+    function get_code($order, $payment)
+    {
+        if (!defined('EC_CHARSET'))
+        {
+            $charset = 'utf-8';
+        }
+        else
+        {
+            $charset = EC_CHARSET;
+        }
+
+        $real_method = $payment['alipay_pay_method'];
+		
+-----------------------
+
+select * from ecs_order_info
+------------------------
+
+
+update ecs_payment set pay_config='a:4:{i:0;a:3:{s:4:"name";s:14:"alipay_account";s:4:"type";s:4:"text";s:5:"value";s:0:"";}i:1;a:3:{s:4:"name";s:10:"alipay_key";s:4:"type";s:4:"text";s:5:"value";s:0:"";}i:2;a:3:{s:4:"name";s:14:"alipay_partner";s:4:"type";s:4:"text";s:5:"value";s:0:"";}i:3;a:3:{s:4:"name";s:17:"alipay_pay_method";s:4:"type";s:6:"select";s:5:"value";s:1:"0";}}' where pay_id=4
+
+update ecs_payment set pay_code='alipay' where pay_id=4
+update ecs_payment set pay_code='boc' where pay_id=5
+
+select * from ecs_payment
+
+    /* 插入支付日志 */
+    $order['log_id'] = insert_pay_log($new_order_id, $order['order_amount'], PAY_ORDER);
+
+    /* 取得支付信息，生成支付代码 */
+    if ($order['order_amount'] > 0)
+    {
+        $payment = payment_info($order['pay_id']);
+
+        include_once('includes/modules/payment/' . $payment['pay_code'] . '.php');
+
+        $pay_obj    = new $payment['pay_code'];/*这里通过在表ecs_payment中配置的值来初始化对象*/
+
+        $pay_online = $pay_obj->get_code($order, unserialize_config($payment['pay_config']));
+
+        $order['pay_desc'] = $payment['pay_desc'];
+
+        $smarty->assign('pay_online', $pay_online);/*这里是支付宝按钮出现的地方*/
+    }
+    if(!empty($order['shipping_name']))
+    {
+        $order['shipping_name']=trim(stripcslashes($order['shipping_name']));
+    }
+
+    /* 订单信息 */
+    $smarty->assign('order',      $order);
+    $smarty->assign('total',      $total);
+"flow.php" 2765 lines --64%-- 
