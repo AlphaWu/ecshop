@@ -1,7 +1,7 @@
 <?php
 
 /**
- * ECSHOP 交通银行语言文件
+ * ECSHOP 交通银行支付接口银联在线语言文件
  * ============================================================================
  * * 版权所有 2014 顾启明，并保留所有权利。
  * 网站地址:  http://cruiser.github.io/qmsky/
@@ -13,7 +13,7 @@
 
 global $_LANG;
 
-$_LANG['boc'] = '交通银行';
-$_LANG['boc_desc'] = 'boc_desc';
-$_LANG['pay_button'] = '立即使用交通银行卡支付';
+$_LANG['boc'] = '银联在线';
+$_LANG['boc_upay_desc'] = 'boc_upay_desc';
+$_LANG['pay_button'] = '立即使用银联卡支付';
 ?>

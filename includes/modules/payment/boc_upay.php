@@ -16,7 +16,7 @@ if (!defined('IN_ECS'))
     die('Hacking attempt');
 }
 
-$payment_lang = ROOT_PATH . 'languages/' .$GLOBALS['_CFG']['lang']. '/payment/boc.php';
+$payment_lang = ROOT_PATH . 'languages/' .$GLOBALS['_CFG']['lang']. '/payment/boc_upay.php';
 
 if (file_exists($payment_lang))
 {
@@ -34,7 +34,7 @@ if (isset($set_modules) && $set_modules == TRUE)
     $modules[$i]['code']    = basename(__FILE__, '.php');
 
     /* 描述对应的语言项 */
-    $modules[$i]['desc']    = 'boc_desc';
+    $modules[$i]['desc']    = 'boc_upay_desc';
 
     /* 是否支持货到付款 */
     $modules[$i]['is_cod']  = '0';
@@ -59,7 +59,7 @@ if (isset($set_modules) && $set_modules == TRUE)
 /**
  * 类
  */
-class boc
+class boc_upay
 {
 
     /**
@@ -70,13 +70,13 @@ class boc
      *
      * @return void
      */
-    function boc()
+    function boc_upay()
     {
     }
 
     function __construct()
     {
-        $this->boc();
+        $this->boc_upay();
     }
 
     /**
@@ -109,15 +109,15 @@ class boc
             'orderMono'      => $order['log_id'],
             'phdFlag'      => '',
             'notifyType'      => '1',
-            'merURL'      => return_url('boc'),
-            'goodsURL'      => return_url('boc'),
+            'merURL'      => return_url('boc_upay'),
+            'goodsURL'      => return_url('boc_upay'),
             'jumpSeconds'      => '5',
             'payBatchNo'      => '',
             'proxyMerName'      => '',
             'proxyMerType'      => '',
             'proxyMerCredentials'      => '',
             'netType'      => '0',
-            'issBankNo'      => ''
+            'issBankNo'      => 'OTHERS'
         );
 
         ksort($parameter);
@@ -131,6 +131,10 @@ class boc
             $param .= "$key=" .urlencode($val). "&";
             $sign  .= "$key=$val&";
         }
+
+//        $param = substr($param, 0, -1);
+//        $sign  = substr($sign, 0, -1). $payment['boc_key'];
+//        //$sign  = substr($sign, 0, -1). ALIPAY_AUTH;
 
         $button = '<div style="text-align:center"><input type="button" onclick="window.open(\'includes/modules/payment/boc_merchant.php?'.$sign.'\')" value="' .$GLOBALS['_LANG']['pay_button']. '" /></div>';
 
@@ -150,7 +154,6 @@ class boc
 
 	$tranCode = "cb2200_verify";
 	$notifyMsg = $_REQUEST["notifyMsg"];   
-        error_log($notifyMsg,3,'errors.log');
 	$lastIndex = strripos($notifyMsg,"|");
 	$signMsg = substr($notifyMsg,$lastIndex+1); //签名信息
 	$srcMsg = substr($notifyMsg,0,$lastIndex+1);//原文

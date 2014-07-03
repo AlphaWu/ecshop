@@ -6,12 +6,7 @@
 ?>
 
 <?php
-	//socket¿¿ip	
-	$socket_ip = "127.0.0.1";		
-	//socket¿¿¿¿	
-	$socket_port = "8080";		
-	//¿¿¿	
-	$merchID = "301310063009501";
+	require_once(dirname(__FILE__) . "/boc_config.php");
 	//»ñµÃ±íµ¥´«¹ýÀ´µÄÊý¾Ý
 	$interfaceVersion = $_REQUEST["interfaceVersion"];		
 	$merID = $merchID; //ÉÌ»§ºÅÎª¹Ì¶¨	
